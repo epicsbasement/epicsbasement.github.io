@@ -1,15 +1,18 @@
 body {
   text-align: center;
   font-family: "Arial", Helvetica, sans-serif;
-  background-image: url("seal.jpg");
+  background-image: url("back.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover
+  background-size: cover;
   /*
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
   */
+}
+
+#gameBody {
+  background-image: url("back2.png");
 }
 
 h1 {
@@ -61,6 +64,10 @@ p {
   border: 2px solid black;
 }
 
+.project-item:hover {
+  background: radial-gradient(white, #4088FF);
+}
+
 .project-item-title {
   border-bottom: black solid 3px;
 }
@@ -80,12 +87,4 @@ p {
   padding: 0;
   width: 50%;
   height: 75%;
-}
-
-.project-item img {
-  float: left;
-}
-
-.project-item p {
-  float: right;
 }
