@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: "Arial", Helvetica, sans-serif;
-  background-image: url("back.png");
+  background-image: url("lain2.png");
   background-repeat: no-repeat;
   background-size: cover;
   /*
@@ -12,13 +12,17 @@ body {
 }
 
 #gameBody {
-  background-image: url("back2.png");
+  background-image: url("back3.png");
+  background-size: 100% 100%;
 }
 
 h1 {
   padding-top: 5%;
   font-size: 5rem;
   text-align: center;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  
 }
 
 #projectsCustom {
@@ -31,6 +35,19 @@ h2 {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 2.5rem;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+h3 {
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+h4 {
+text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
 }
 
 a {
@@ -47,6 +64,8 @@ p {
   padding-right: 20%;
   padding-left: 20%;
   font-size: 1.1rem;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 .projects {
