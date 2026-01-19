@@ -1,20 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <title>Epic's Basement</title>
-  <link rel="stylesheet" href="main.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre - Epic's Basement</title>
+    <style>
+        body {
+            background-color: #0a0a0c; 
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%),
+                linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("lain3.jpg");
+            background-size: 100% 4px, cover, cover;
+            z-index: -1;
+        }
+
+       
+        .title-container {
+            position: relative; 
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .sitting-char {
+            position: absolute;
+            bottom: 75%; /* Ajusta a altura para "sentar" no topo das letras */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px; 
+            height: auto;
+            pointer-events: none; 
+            z-index: 10;
+        }
+
+        .about-card {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1>Sobre</h1>
-  <h4>O Epic's Basement detém todos os projetos de tradução feitos por EpicWafflez, uma fã de Visual Novels que pretende 
-  <h4>traduzir várias dessas obras para o português brasileiro e disponibilizá-las gratuitamente.</h4>
-  <h4>Não são disponibilizados jogos pagos ou qualquer conteúdo pirata, apenas patches de tradução feitos de fã para fã, de forma amadora.</h4>
-  <h4>Todas as traduções são feitas sem o auxílio de IA e produzidas somente por mim, de forma independente e não por um grupo.</h4>
-<h4>Isto é puramente um hobby, feito nas horas vagas. Por favor, não criem expectativas de atualizações frequentes. Obrigada.</h4>
-<h4>Doações serão aceitas caso sinta vontade de fazê-las, porém pedidos ou sugestões poderão ou não ser acatados.</h4>
-  <h2>
-    <a href="index.html">Voltar</a>
-  </h2>
+  <div class="about-page-wrapper">
+    <div class="about-card">
+        
+        <div class="title-container">
+            <img src="epikita.png" class="sitting-char" alt="Chibi sitting">
+            <h1 class="about-title">Sobre</h1>
+        </div>
+        
+        <div class="about-content">
+            <p>O Epic's Basement detém todos os projetos de tradução feitos por EpicWafflez, uma fã de Visual Novels que pretende traduzir várias dessas obras para o português brasileiro e disponibilizá-las gratuitamente.</p>
+            <p>Não são disponibilizados jogos pagos ou qualquer conteúdo pirata, apenas patches de tradução feitos de fã para fã, de forma amadora.</p>
+            <p>Todas as traduções são feitas sem o auxílio de IA e produzidas somente por mim, de forma independente e não por um grupo.</p>
+            <p>Isto é puramente um hobby, feito nas horas vagas. Por favor, não criem expectativas de atualizações frequentes. Obrigada.</p>
+            <p class="highlight-text">Doações serão aceitas caso sinta vontade de fazê-las, porém pedidos ou sugestões poderão ou não ser acatados.</p>
+        </div>
+
+        <div class="about-footer">
+            <a href="index.html" class="back-button">Voltar</a>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
